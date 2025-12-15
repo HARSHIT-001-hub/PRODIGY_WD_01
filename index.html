@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Frist Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <ul class="nav-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h1>Harshit Tripathi</h1>
+        <p>Web Developer | Engineering Student</p>
+        <div class="spacer"></div>
+    </section>
+</body>
+<script>
+    window.addEventListener('scroll',function(){
+        const navbar = document.getElementById('nav-bar');
+        if(windows.scrollY > 50){
+            navbar.classList.add("scrolled")
+        } else {
+            navbar.classList.remove("scrolled")
+        }
+    });
+</script>
+</html>

@@ -1,45 +1,115 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
 #nav-bar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: blue;
-    padding: 15px 0;
-    transition: background-color 0.4s, box-shadow 0.4s;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: 0.3s ease;
     z-index: 1000;
 }
+
 #nav-bar.scrolled {
-    background-color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: midnightblue;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
 .nav-menu {
     list-style: none;
     display: flex;
-    justify-content: center;
+    gap: 20px;
 }
-.nav-menu li{
-    margin: 0 20px;
-}
+
 .nav-menu a {
-    text-decoration: none;
     color: white;
-    font-size: 18px;
-    padding: 8px 12px;
-    transition: color 0.3s, background-color 0.3s;
+    text-decoration: none;
+    font-size: 16px;
 }
+
 .nav-menu a:hover {
-    background-color: #ff9800;
+    color: #00c6ff;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background-color: midnightblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: #00c6ff;
+    border: none;
     color: black;
+    font-size: 16px;
+    cursor: pointer;
     border-radius: 5px;
 }
-.content{
-    margin-top: 100px;
+
+/* Sections */
+.section {
+    padding: 80px 40px;
     text-align: center;
+    background: #FFFDD0;
 }
-.spacer{
-    height: 1500px;
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.gray {
+    background: white;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: lightskyblue;
+    padding: 30px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }

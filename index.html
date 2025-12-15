@@ -3,33 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Frist Page</title>
+    <title>Prodigy Infotech</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navbar -->
     <nav id="nav-bar">
+        <div class="logo">Prodigy Infotech</div>
         <ul class="nav-menu">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section class="content">
-        <h1>Harshit Tripathi</h1>
-        <p>Web Developer | Engineering Student</p>
-        <div class="spacer"></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Prodigy Infotech</h1>
+        <p>Empowering Students with Real-World Tech Skills</p>
+        <button>Explore Internships</button>
     </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            Prodigy Infotech provides industry-level internships and training programs
+            designed to bridge the gap between academics and real-world skills.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section gray">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">Web Development</div>
+            <div class="card">Machine Learning</div>
+            <div class="card">Data Science</div>
+            <div class="card">Cyber Security</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@prodigyinfotech.com</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
-<script>
-    window.addEventListener('scroll',function(){
-        const navbar = document.getElementById('nav-bar');
-        if(windows.scrollY > 50){
-            navbar.classList.add("scrolled")
-        } else {
-            navbar.classList.remove("scrolled")
-        }
-    });
-</script>
 </html>
